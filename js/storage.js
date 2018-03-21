@@ -4,7 +4,7 @@ Config.origindomain = 'play.pokemonshowdown.com';
 Config.defaultserver = {
 	id: 'dragonheaven',
 	host: '51.15.6.79',
-	port: 8443,
+	port: 8050,
 	httpport: 8050,
 	altport: 80,
 	registered: true
