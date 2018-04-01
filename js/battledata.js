@@ -1215,7 +1215,7 @@ var Tools = {
 		} else {
 			// There is no entry or enough data in pokedex-mini.js
 			// Handle these in case-by-case basis; either using BW sprites or matching the played gen.
-			if (gen === 'xy') gen = 'bw';
+			if (gen === 'xy') gen = 'xydex';
 			dir = gen + dir;
 
 			// Gender differences don't exist prior to Gen 4,
