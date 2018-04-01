@@ -402,7 +402,7 @@ var Tools = {
 	resourcePrefix: (function () {
 		var prefix = '';
 		if (document.location.protocol === 'file:') prefix = 'https:';
-		return prefix + '//play.pokemonshowdown.com/';
+		return prefix + 'https://github.com/XpRienzo/Pokemon-Showdown-Client/blob/master/data/';
 	})(),
 
 	fxPrefix: (function () {
