@@ -1640,7 +1640,7 @@ var Tools = {
 			}
 		}
 		if (Tools.getTemplate(pokemon.species).exists === false) {
-			return 'background-image:url(' + Tools.resourcePrefix + 'sprites/bw/0.png);background-position:10px 5px;background-repeat:no-repeat';
+			return 'background-image:url(' + Tools.resourcePrefix + 'sprites/xydex/0.png);background-position:10px 5px;background-repeat:no-repeat';
 		}
 		var shiny = (pokemon.shiny ? '-shiny' : '');
 		// var sdata;
@@ -1652,7 +1652,7 @@ var Tools = {
 		// 		sdata = BattlePokemonSprites[id].front.ani;
 		// 	}
 		// } else {
-		// 	return 'background-image:url(' + Tools.resourcePrefix + 'sprites/bw' + shiny + '/' + spriteid + '.png);background-position:10px 5px;background-repeat:no-repeat';
+		// 	return 'background-image:url(' + Tools.resourcePrefix + 'sprites/xydex' + shiny + '/' + spriteid + '.png);background-position:10px 5px;background-repeat:no-repeat';
 		// }
 		if (Tools.prefs('nopastgens')) gen = 6;
 		var spriteDir = Tools.resourcePrefix + 'sprites/xydex';
@@ -1664,7 +1664,7 @@ var Tools = {
 			if (id === 'garchompmega') offset = '-2px 0px';
 			return 'background-image:url(' + spriteDir + shiny + '/' + spriteid + '.png);background-position:' + offset + ';background-repeat:no-repeat';
 		}
-		spriteDir = Tools.resourcePrefix + 'sprites/bw';
+		spriteDir = Tools.resourcePrefix + 'sprites/xydex';
 		if (gen <= 1 && template.gen <= 1) spriteDir = Tools.resourcePrefix + 'sprites/rby';
 		else if (gen <= 2 && template.gen <= 2) spriteDir = Tools.resourcePrefix + 'sprites/gsc';
 		else if (gen <= 3 && template.gen <= 3) spriteDir = Tools.resourcePrefix + 'sprites/rse';
