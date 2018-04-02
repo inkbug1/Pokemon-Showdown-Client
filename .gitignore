@@ -5,6 +5,7 @@
 /data/*
 !/data/graphics.js
 !/data/learnsets-g6.js
+!/data/sprites
 node_modules/
 eslint-cache/
 .DS_Store
