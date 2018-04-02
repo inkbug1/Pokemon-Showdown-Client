@@ -1,2 +1,0 @@
-Upload sprites here
-Test
