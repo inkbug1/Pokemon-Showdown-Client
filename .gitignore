@@ -2,7 +2,7 @@
 /config/
 /index.php
 /index.html
-/data/*
+!/data
 !/data/graphics.js
 !/data/learnsets-g6.js
 !/data/sprites
