@@ -407,7 +407,7 @@ var Tools = {
 
 	fxPrefix: (function () {
 		if (document.location.protocol === 'file:') {
-			if (window.Replays) return 'https://play.pokemonshowdown.com/fx/';
+			if (window.Replays) return 'https://raw.githubusercontent.com/XpRienzo/Pokemon-Showdown-Client/master/fx/';
 			return 'fx/';
 		}
 		return '//play.pokemonshowdown.com/fx/';
