@@ -254,7 +254,7 @@ exports.BattleItems = {
 		megaEvolves: "Cofagrigus",
 		gen: 7,
 		desc: "If holder is a Cofagrigus, this item allows it to Mega Evolve in battle.",
-}, 
+	}, 
 	"deciduite": {
 		id: "deciduite",
 		name: "deciduite",
@@ -359,9 +359,6 @@ exports.BattleItems = {
 		id: "electricmemory",
 		name: "Electric Memory",
 		spritenum: 679,
-		onMemory: 'Electric',
-				return false;
-			}
 		megaStone: "Silvally-Electric-Mega",
 		megaEvolves: "Silvally-Electric",
 		forcedForme: "Silvally-Electric",
@@ -421,9 +418,6 @@ exports.BattleItems = {
 		id: "firememory",
 		name: "Fire Memory",
 		spritenum: 676,
-		onMemory: 'Fire',
-				return false;
-			}
 		megaStone: "Silvally-Fire-Mega",
 		megaEvolves: "Silvally-Fire",
 		forcedForme: "Silvally-Fire",
@@ -498,7 +492,7 @@ exports.BattleItems = {
 		megaEvolves: "Golurk",
 		gen: 7,
 		desc: "If holder is a Golurk, this item allows it to Mega Evolve in battle.",
-}, 
+	}, 
 	"goodranite": {
 		id:"goodranite", 
 		name:"Goodranite",
@@ -521,9 +515,6 @@ exports.BattleItems = {
 		id: "grassmemory",
 		name: "Grass Memory",
 		spritenum: 678,
-		onMemory: 'Grass',
-				return false;
-			}
 		megaStone: "Silvally-Grass-Mega",
 		megaEvolves: "Silvally-Grass",
 		forcedForme: "Silvally-Grass",
@@ -565,9 +556,6 @@ exports.BattleItems = {
 		id: "icememory",
 		name: "Ice Memory",
 		spritenum: 681,
-		onMemory: 'Ice',
-				return false;
-			}
 		megaStone: "Silvally-Ice-Mega",
 		megaEvolves: "Silvally-Ice",
 		forcedForme: "Silvally-Ice",
@@ -1036,7 +1024,7 @@ exports.BattleItems = {
 		megaEvolves: "Sigilyph",
 		gen: 7,
 		desc: "If holder is a Sigilyph, this item allows it to Mega Evolve in battle.",
-},
+	},
 	"simisagite": {
 		id: "simisagite",
 		name: "Simisagite",
@@ -1351,9 +1339,6 @@ exports.BattleItems = {
 		id: "watermemory",
 		name: "Water Memory",
 		spritenum: 677,
-		onMemory: 'Water',
-				return false;
-			}
 		megaStone: "Silvally-Water-Mega",
 		megaEvolves: "Silvally",
 		forcedForme: "Silvally-Water",
