@@ -31,6 +31,7 @@ exports.BattlePokedex = {
 	   color: "Purple",
 	   evoLevel: 1,
 	   eggGroups: ["Field","Dragon"],
+		requiredItem: "Arbokite"
 	},
 	sandslashalolamega: {
        num: 28,
@@ -46,6 +47,7 @@ exports.BattlePokedex = {
 	   color: "Blue",
 	   evoLevel: 1,
 	   eggGroups: ["Field"],
+		requiredItem: "Aloslashite"
 	},
 	nidoqueenmega: {
        num: 31,
@@ -61,6 +63,7 @@ exports.BattlePokedex = {
 	   color: "Blue",
 	   evoLevel: 1,
 	   eggGroups: ["Undiscovered"],
+		requiredItem: "Nidoqueenite"
 	},
 	nidokingmega: {
        num: 34,
@@ -76,6 +79,7 @@ exports.BattlePokedex = {
 	   color: "Purple",
 	   evoLevel: 1,
 	   eggGroups: ["Monster","Field"],
+		requiredItem: "Nidokingite"
 	},
 	clefablemega: {
        num: 36,
@@ -91,6 +95,7 @@ exports.BattlePokedex = {
 	   color: "Pink",
 	   evoLevel: 1,
 	   eggGroups: ["Fairy"],
+		requiredItem: "Clefablite"
 	},
 	ninetalesalola: {
 		num: 38,
@@ -122,6 +127,7 @@ exports.BattlePokedex = {
 	   color: "Blue",
 	   evoLevel: 1,
 	   eggGroups: ["Field"],
+		requiredItem: "Alotalesite"
 	},
 	wigglytuffmega: {
        num: 40,
@@ -137,6 +143,7 @@ exports.BattlePokedex = {
 	   color: "Pink",
 	   evoLevel: 1,
 	   eggGroups: ["Fairy"],
+		requiredItem: "Wigglytuffite"
 	},
 	persianalola: {
 		num: 53,
@@ -167,6 +174,7 @@ exports.BattlePokedex = {
 	   color: "Blue",
 	   evoLevel: 1,
 	   eggGroups: ["Field"],
+		requiredItem: "Alopersite"
 	},
 	primeapemega: {
        num: 57,
@@ -182,6 +190,7 @@ exports.BattlePokedex = {
 	   color: "Brown",
 	   evoLevel: 1,
 	   eggGroups: ["Field"],
+		requiredItem: "Primeapite"
 	},
 	arcaninemega: {
        num: 59,
@@ -197,6 +206,7 @@ exports.BattlePokedex = {
 	   color: "Brown",
 	   evoLevel: 1,
 	   eggGroups: ["Field"],
+		requiredItem: "Arcanite"
 	},
 	machampmega: {
        num: 68,
@@ -212,6 +222,7 @@ exports.BattlePokedex = {
 	   color: "Gray",
 	   evoLevel: 1,
 	   eggGroups: ["Human-Like"],
+		requiredItem: "Machampite"
 	},
 	golemalola: {
 		num: 76,
@@ -242,6 +253,7 @@ exports.BattlePokedex = {
 	   color: "Gray",
 	   evoLevel: 1,
 	   eggGroups: ["Mineral"],
+		requiredItem: "Alogolite"
 	},
 	kinglermega: {
        num: 99,
@@ -257,6 +269,7 @@ exports.BattlePokedex = {
 	   color: "Red",
 	   evoLevel: 1,
 	   eggGroups: ["Water 3"],
+		requiredItem: "Kinglerite"
 	},
 	marowakmega: {
        num: 105,
@@ -272,6 +285,7 @@ exports.BattlePokedex = {
 	   color: "Brown",
 	   evoLevel: 1,
 	   eggGroups: ["Monster"],
+		requiredItem: "Marowakite"
 	},
 	marowakalolamega: {
        num: 105,
@@ -287,6 +301,7 @@ exports.BattlePokedex = {
 	   color: "Purple",
 	   evoLevel: 1,
 	   eggGroups: ["Monster"],
+		requiredItem: "Alomarowite"
 	},
 	starmiemega: {
        num: 121,
@@ -301,6 +316,7 @@ exports.BattlePokedex = {
 	   weightkg: 34,
 	   color: "Purple",
 	   eggGroups: ["Water 3"],
+		requiredItem: "Starmitite"
 	},
 	vaporeonmega: {
        num: 134,
@@ -315,6 +331,7 @@ exports.BattlePokedex = {
 	   weightkg: 29,
 	   color: "Blue",
 	   eggGroups: ["Field"],
+		requiredItem: "Vaporeonite"
 	},
 	jolteonmega: {
        num: 135,
@@ -329,6 +346,7 @@ exports.BattlePokedex = {
 	   weightkg: 24.5,
 	   color: "Yellow",
 	   eggGroups: ["Field"],
+		requiredItem: "Jolteonite"
 	},
 	flareonmega: {
        num: 136,
@@ -343,6 +361,7 @@ exports.BattlePokedex = {
 	   weightkg: 25,
 	   color: "Red",
 	   eggGroups: ["Field"],
+		requiredItem: "Flareonite"
 	},
 	snorlaxmega: {
 		num: 143,
@@ -358,6 +377,7 @@ exports.BattlePokedex = {
 		weightkg: 460,
 		color: "Black",
 		eggGroups: ["Monster"],
+		requiredItem: "Snorlaxite"
 	},
 	articunomega: {
 		num: 144,
@@ -373,6 +393,7 @@ exports.BattlePokedex = {
 		weightkg: 55.4,
 		color: "Blue",
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Articunite"
 	},
 	zapdosmega: {
 		num: 143,
@@ -388,6 +409,7 @@ exports.BattlePokedex = {
 		weightkg: 52.6,
 		color: "Yellow",
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Zapdosite"
 	},
 	moltresmega: {
 		num: 146,
@@ -403,6 +425,7 @@ exports.BattlePokedex = {
 		weightkg: 60,
 		color: "Yellow",
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Moltresite"
 	},
 	dragonitemega: {
 		num: 149,
@@ -417,6 +440,7 @@ exports.BattlePokedex = {
 		weightkg: 210,
 		color: "Brown",
 		eggGroups: ["Water 1", "Dragon"],
+		requiredItem: "Dragoniteite"
 	},
 	meganiummega: {
 		num: 154,
@@ -431,6 +455,7 @@ exports.BattlePokedex = {
 		weightkg: 100.5,
 		color: "Green",
 		eggGroups: ["Monster", "Grass"],
+		requiredItem: "Meganiumite"
 	},
 	typhlosionmega: {
 		num: 157,
@@ -445,6 +470,7 @@ exports.BattlePokedex = {
 		weightkg: 79.5,
 		color: "Yellow",
 		eggGroups: ["Field"],
+		requiredItem: "Typhlosite"
 	},
 	feraligatrmega: {
 		num: 160,
@@ -459,6 +485,7 @@ exports.BattlePokedex = {
 		weightkg: 88.8,
 		color: "Blue",
 		eggGroups: ["Monster", "Water 1"],
+		requiredItem: "Feraligatite"
 	},
 	bellossommega: {
 		num: 182,
@@ -473,6 +500,7 @@ exports.BattlePokedex = {
 		weightkg: 5.8,
 		color: "Green",
 		eggGroups: ["Grass"],
+		requiredItem: "Bellossite"
 	},
 	sudowoodomega: {
 		num: 185,
@@ -487,6 +515,7 @@ exports.BattlePokedex = {
 		weightkg: 38,
 		color: "Brown",
 		eggGroups: ["Mineral"],
+		requiredItem: "Sudowoodite"
 	},
 	sunfloramega: {
        num: 192,
@@ -501,6 +530,7 @@ exports.BattlePokedex = {
 	   weightkg: 8.5,
 	   color: "Yellow",
 	   eggGroups: ["Grass"],
+		requiredItem: "Sunflorite"
 	},
 	dunsparcemega: {
 		num: 206,
@@ -515,6 +545,7 @@ exports.BattlePokedex = {
 		weightkg: 14,
 		color: "Yellow",
 		eggGroups: ["Field"],
+		requiredItem: "Dunsparcite"
 	},
 	mantinemega: {
 		num: 226,
@@ -529,6 +560,7 @@ exports.BattlePokedex = {
 		weightkg: 220,
 		color: "Purple",
 		eggGroups: ["Water 1"],
+		requiredItem: "Mantinite"
 	},
 	donphanmega: {
 		num: 232,
@@ -543,6 +575,7 @@ exports.BattlePokedex = {
 		weightkg: 120,
 		color: "Gray",
 		eggGroups: ["Field"],
+		requiredItem: "Donphanite"
 	},
 	blisseymega: {
 		num: 242,
@@ -557,6 +590,7 @@ exports.BattlePokedex = {
 		weightkg: 46.8,
 		color: "Pink",
 		eggGroups: ["Fairy"],
+		requiredItem: "Blissinite"
 	},
 	raikoumega: {
 		num: 243,
@@ -571,6 +605,7 @@ exports.BattlePokedex = {
 		weightkg: 178,
 		color: "Yellow",
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Raikounite"
 	},
 	enteimega: {
 		num: 243,
@@ -585,6 +620,7 @@ exports.BattlePokedex = {
 		weightkg: 198,
 		color: "Brown",
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Enteinite"
 	},
 	suicunemega: {
 		num: 243,
@@ -599,6 +635,7 @@ exports.BattlePokedex = {
 		weightkg: 187,
 		color: "Blue",
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Suicunite"
 	},
 	mightyenamega: {
 		num: 262,
@@ -613,6 +650,7 @@ exports.BattlePokedex = {
 		weightkg: 37,
 		color: "Gray",
 		eggGroups: ["Field"],
+		requiredItem: "Mightyenite"
 	},
 	swellowmega: {
 		num: 277,
@@ -627,6 +665,7 @@ exports.BattlePokedex = {
 		weightkg: 19.8,
 		color: "Blue",
 		eggGroups: ["Flying"],
+		requiredItem: "Swellowite"
 	},
 	pelippermega: {
 		num: 279,
@@ -641,6 +680,7 @@ exports.BattlePokedex = {
 		weightkg: 28,
 		color: "Yellow",
 		eggGroups: ["Water 1", "Flying"],
+		requiredItem: "Pelipperite"
 	},
 	breloommega: {
 		num: 286,
@@ -655,6 +695,7 @@ exports.BattlePokedex = {
 		weightkg: 39.2,
 		color: "Green",
 		eggGroups: ["Fairy", "Grass"],
+		requiredItem: "Breloomite"
 	},
 	delcattymega: {
 		num: 301,
@@ -669,6 +710,7 @@ exports.BattlePokedex = {
 		weightkg: 32.6,
 		color: "Purple",
 		eggGroups: ["Field", "Fairy"],
+		requiredItem: "Delcattinite"
 	},
 	torkoalmega: {
 		num: 324,
@@ -683,6 +725,7 @@ exports.BattlePokedex = {
 		weightkg: 80.4,
 		color: "Brown",
 		eggGroups: ["Field"],
+		requiredItem: "Torkoalite"
 	},
 	flygonmega: {
 		num: 330,
@@ -697,6 +740,7 @@ exports.BattlePokedex = {
 		weightkg: 82,
 		color: "Green",
 		eggGroups: ["Bug"],
+		requiredItem: "Flygonite"
 	},
 	sevipermega: {
 		num: 336,
@@ -711,6 +755,7 @@ exports.BattlePokedex = {
 		weightkg: 52.5,
 		color: "Black",
 		eggGroups: ["Field", "Dragon"],
+		requiredItem: "Seviperite"
 	},
 	lunatonemega: {
 		num: 337,
@@ -725,6 +770,7 @@ exports.BattlePokedex = {
 		weightkg: 168,
 		color: "Yellow",
 		eggGroups: ["Mineral"],
+		requiredItem: "Lunatonite"
 	},
 	solrockmega: {
 		num: 338,
@@ -739,6 +785,7 @@ exports.BattlePokedex = {
 		weightkg: 154,
 		color: "Red",
 		eggGroups: ["Mineral"],
+		requiredItem: "Solrockite"
 	},
 	crawdauntmega: {
 		num: 342,
@@ -753,6 +800,7 @@ exports.BattlePokedex = {
 		weightkg: 32.8,
 		color: "Red",
 		eggGroups: ["Water 1", "Water 3"],
+		requiredItem: "Crawdauntite"
 	},
 	tropiusmega: {
 		num: 357,
@@ -767,6 +815,7 @@ exports.BattlePokedex = {
 		weightkg: 100,
 		color: "Green",
 		eggGroups: ["Monster", "Grass"],
+		requiredItem: "Tropiusite"
 	},
 	huntailmega: {
 		num: 367,
@@ -781,6 +830,7 @@ exports.BattlePokedex = {
 		weightkg: 27,
 		color: "Blue",
 		eggGroups: ["Water 1"],
+		requiredItem: "Huntailite"
 	},
 	gorebyssmega: {
 		num: 368,
@@ -795,6 +845,7 @@ exports.BattlePokedex = {
 		weightkg: 22.6,
 		color: "Pink",
 		eggGroups: ["Water 1"],
+		requiredItem: "Gorebyssite"
 	},
 	torterramega: {
 		num: 389,
@@ -809,6 +860,7 @@ exports.BattlePokedex = {
 		weightkg: 310,
 		color: "Green",
 		eggGroups: ["Monster", "Grass"],
+		requiredItem: "Torterrite"
 	},
 	infernapemega: {
 		num: 392,
@@ -823,6 +875,7 @@ exports.BattlePokedex = {
 		weightkg: 55,
 		color: "Brown",
 		eggGroups: ["Field", "Human-Like"],
+		requiredItem: "Infernite"
 	},
 	empoleonmega: {
 		num: 395,
@@ -837,6 +890,7 @@ exports.BattlePokedex = {
 		weightkg: 84.5,
 		color: "Blue",
 		eggGroups: ["Water 1", "Field"],
+		requiredItem: "Empleonite"
 	},
 	staraptormega: {
 		num: 398,
@@ -851,6 +905,7 @@ exports.BattlePokedex = {
 		weightkg: 24.9,
 		color: "Brown",
 		eggGroups: ["Flying"],
+		requiredItem: "Staraptite"
 	},
 	roserademega: {
 		num: 407,
@@ -865,6 +920,7 @@ exports.BattlePokedex = {
 		weightkg: 14.5,
 		color: "Green",
 		eggGroups: ["Fairy", "Grass"],
+		requiredItem: "Roserite"
 	},
 	ambipommega: {
 		num: 424,
@@ -879,6 +935,7 @@ exports.BattlePokedex = {
 		weightkg: 20.3,
 		color: "Purple",
 		eggGroups: ["Field"],
+		requiredItem: "Ambipomite"
 	},
 	puruglymega: {
 		num: 432,
@@ -893,6 +950,7 @@ exports.BattlePokedex = {
 		weightkg: 43.8,
 		color: "Gray",
 		eggGroups: ["Field"],
+		requiredItem: "Puruglite"
 	},
 	drapionmega: {
 		num: 452,
@@ -907,6 +965,7 @@ exports.BattlePokedex = {
 		weightkg: 61.5,
 		color: "Purple",
 		eggGroups: ["Bug", "Water 3"],
+		requiredItem: "Drapionite"
 	},
 	lumineonmega: {
 		num: 457,
@@ -921,6 +980,7 @@ exports.BattlePokedex = {
 		weightkg: 24,
 		color: "Blue",
 		eggGroups: ["Water 2"],
+		requiredItem: "Lumineonite"
 	},
 	weavilemega: {
 		num: 461,
@@ -935,6 +995,7 @@ exports.BattlePokedex = {
 		weightkg: 34,
 		color: "Black",
 		eggGroups: ["Field"],
+		requiredItem: "Weavilite"
 	},
 	magnezonemega: {
 		num: 462,
@@ -949,6 +1010,7 @@ exports.BattlePokedex = {
 		weightkg: 180,
 		color: "Gray",
 		eggGroups: ["Mineral"],
+		requiredItem: "Magnezonite"
 	},
 	rhyperiormega: {
 		num: 464,
@@ -963,6 +1025,7 @@ exports.BattlePokedex = {
 		weightkg: 282.8,
 		color: "Gray",
 		eggGroups: ["Monster", "Field"],
+		requiredItem: "Rhyperionite"
 	},
 	tangrowthmega: {
 		num: 465,
@@ -977,6 +1040,7 @@ exports.BattlePokedex = {
 		weightkg: 138.6,
 		color: "Blue",
 		eggGroups: ["Grass"],
+		requiredItem: "Tangrowthite"
 	},
 	electiviremega: {
 		num: 466,
@@ -991,6 +1055,7 @@ exports.BattlePokedex = {
 		weightkg: 138.6,
 		color: "Yellow",
 		eggGroups: ["Human-Like"],
+		requiredItem: "Electivirite"
 	},
 	magmortarmega: {
 		num: 467,
@@ -1005,6 +1070,7 @@ exports.BattlePokedex = {
 		weightkg: 68,
 		color: "Red",
 		eggGroups: ["Human-Like"],
+		requiredItem: "Magmortite"
 	},
 	yanmegamega: {
 		num: 469,
@@ -1019,6 +1085,7 @@ exports.BattlePokedex = {
 		weightkg: 180,
 		color: "Gray",
 		eggGroups: ["Mineral"],
+		requiredItem: "Yanmegite"
 	},
 	gliscormega: {
 		num: 472,
@@ -1033,6 +1100,7 @@ exports.BattlePokedex = {
 		weightkg: 42.5,
 		color: "Purple",
 		eggGroups: ["Bug"],
+		requiredItem: "Gliscorite"
 	},
 	mamoswinemega: {
 		num: 473,
@@ -1047,6 +1115,7 @@ exports.BattlePokedex = {
 		weightkg: 291,
 		color: "Brown",
 		eggGroups: ["Field"],
+		requiredItem: "Mamoswinite"
 	},
 	porygonzmega: {
 		num: 474,
@@ -1061,6 +1130,7 @@ exports.BattlePokedex = {
 		weightkg: 34,
 		color: "Red",
 		eggGroups: ["Mineral"],
+		requiredItem: "Porygonite"
 	},
 	probopassmega: {
 		num: 476,
@@ -1075,6 +1145,7 @@ exports.BattlePokedex = {
 		weightkg: 340,
 		color: "Gray",
 		eggGroups: ["Mineral"],
+		requiredItem: "Probopassite"
 	},
 	phionemega: {
 		num: 489,
@@ -1089,6 +1160,7 @@ exports.BattlePokedex = {
 		weightkg: 3.1,
 		color: "Blue",
 		eggGroups: ["Water 1", "Fairy"],
+		requiredItem: "Phionite"
 	},
 	stoutlandmega: {
 		num: 508,
@@ -1103,6 +1175,7 @@ exports.BattlePokedex = {
 		weightkg: 61,
 		color: "Gray",
 		eggGroups: ["Field"],
+		requiredItem: "Stoutlandite"
 	},
 	liepardmega: {
 		num: 510,
@@ -1117,6 +1190,7 @@ exports.BattlePokedex = {
 		weightkg: 37.5,
 		color: "Purple",
 		eggGroups: ["Field"],
+		requiredItem: "Liepardite"
 	},
 	simisagemega: {
 		num: 512,
@@ -1132,6 +1206,7 @@ exports.BattlePokedex = {
 		weightkg: 30.5,
 		color: "Green",
 		eggGroups: ["Field"],
+		requiredItem: "Simisagite"
 	},
 	simisearmega: {
 		num: 514,
@@ -1147,6 +1222,7 @@ exports.BattlePokedex = {
 		weightkg: 28,
 		color: "Red",
 		eggGroups: ["Field"],
+		requiredItem: "Simisearite"
 	},
 	simipourmega: {
 		num: 514,
@@ -1162,6 +1238,7 @@ exports.BattlePokedex = {
 		weightkg: 29,
 		color: "Blue",
 		eggGroups: ["Field"],
+		requiredItem: "Simipourite"
 	},
 	musharnamega: {
 		num: 518,
@@ -1176,6 +1253,7 @@ exports.BattlePokedex = {
 		weightkg: 60.5,
 		color: "Pink",
 		eggGroups: ["Field"],
+		requiredItem: "Musharnite"
 	},
 	zebstrikamega: {
 		num: 523,
@@ -1190,6 +1268,7 @@ exports.BattlePokedex = {
 		weightkg: 79.5,
 		color: "Black",
 		eggGroups: ["Field"],
+		requiredItem: "Zebstrikinite"
 	},
 	seismitoadmega: {
 		num: 537,
@@ -1204,6 +1283,7 @@ exports.BattlePokedex = {
 		weightkg: 62,
 		color: "Blue",
 		eggGroups: ["Water 1"],
+		requiredItem: "Seismitite"
 	},
 	whimsicottmega: {
 		num: 547,
@@ -1218,6 +1298,7 @@ exports.BattlePokedex = {
 		weightkg: 6.6,
 		color: "Green",
 		eggGroups: ["Fairy", "Grass"],
+		requiredItem: "Whimsitite"
 	},
 	krookodilemega: {
 		num: 553,
@@ -1232,6 +1313,7 @@ exports.BattlePokedex = {
 		weightkg: 96.3,
 		color: "Red",
 		eggGroups: ["Field"],
+		requiredItem: "Krookodite"
 	},
 	maractusmega: {
 		num: 556,
@@ -1246,6 +1328,7 @@ exports.BattlePokedex = {
 		weightkg: 28,
 		color: "Green",
 		eggGroups: ["Grass"],
+		requiredItem: "Maractite"
 	},
 	carracostamega: {
 		num: 565,
@@ -1260,6 +1343,7 @@ exports.BattlePokedex = {
 		weightkg: 81,
 		color: "Blue",
 		eggGroups: ["Water 1", "Water 3"],
+		requiredItem: "Carracostite"
 	},
 	reuniclusmega: {
 		num: 579,
@@ -1274,6 +1358,7 @@ exports.BattlePokedex = {
 		weightkg: 20.1,
 		color: "Green",
 		eggGroups: ["Amorphous"],
+		requiredItem: "Reuniclusite"
 	},
 	vanilluxemega: {
 		num: 584,
@@ -1288,6 +1373,7 @@ exports.BattlePokedex = {
 		weightkg: 57.5,
 		color: "White",
 		eggGroups: ["Mineral"],
+		requiredItem: "Vanilluxite"
 	},
 	amoongussmega: {
 		num: 591,
@@ -1302,6 +1388,7 @@ exports.BattlePokedex = {
 		weightkg: 10.5,
 		color: "White",
 		eggGroups: ["Grass"],
+		requiredItem: "Amoongussite"
 	},
 	galvantulamega: {
 		num: 596,
@@ -1316,6 +1403,7 @@ exports.BattlePokedex = {
 		weightkg: 14.3,
 		color: "Yellow",
 		eggGroups: ["Bug"],
+		requiredItem: "Galvantulite"
 	},
 	eelektrossmega: {
 		num: 604,
@@ -1330,6 +1418,7 @@ exports.BattlePokedex = {
 		weightkg: 80.5,
 		color: "Blue",
 		eggGroups: ["Amorphous"],
+		requiredItem: "Eelektrossite"
 	},
 	bearticmega: {
 		num: 614,
@@ -1344,6 +1433,7 @@ exports.BattlePokedex = {
 		weightkg: 260,
 		color: "White",
 		eggGroups: ["Field"],
+		requiredItem: "Bearticite"
 	},
 	mienshaomega: {
 		num: 620,
@@ -1358,6 +1448,7 @@ exports.BattlePokedex = {
 		weightkg: 35.5,
 		color: "Purple",
 		eggGroups: ["Field", "Human-Like"],
+		requiredItem: "Mienshaonite"
 	},
 	braviarymega: {
 		num: 628,
@@ -1372,6 +1463,7 @@ exports.BattlePokedex = {
 		weightkg: 41,
 		color: "Red",
 		eggGroups: ["Flying"],
+		requiredItem: "Braviarite"
 	},
 	hydreigonmega: {
 		num: 635,
@@ -1386,6 +1478,7 @@ exports.BattlePokedex = {
 		weightkg: 160,
 		color: "Blue",
 		eggGroups: ["Dragon"],
+		requiredItem: "Hydreigonite"
 	},
 	volcaronamega: {
 		num: 637,
@@ -1400,6 +1493,7 @@ exports.BattlePokedex = {
 		weightkg: 46,
 		color: "White",
 		eggGroups: ["Bug"],
+		requiredItem: "Volcaronite"
 	},
 	cobalionmega: {
 		num: 638,
@@ -1414,6 +1508,7 @@ exports.BattlePokedex = {
 		weightkg: 250,
 		color: "Blue",
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Cobalionite"
 	},
 	terrakionmega: {
 		num: 639,
@@ -1428,6 +1523,7 @@ exports.BattlePokedex = {
 		weightkg: 260,
 		color: "Gray",
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Terrakionite"
 	},
 	virizionmega: {
 		num: 640,
@@ -1442,6 +1538,7 @@ exports.BattlePokedex = {
 		weightkg: 200,
 		color: "Green",
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Virizionite"
 	},
 	keldeomega: {
 		num: 647,
@@ -1456,6 +1553,7 @@ exports.BattlePokedex = {
 		weightkg: 48.5,
 		color: "Yellow",
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Keldeonite"
 	},
 	diggersbymega: {
 		num: 660,
@@ -1470,6 +1568,7 @@ exports.BattlePokedex = {
 		weightkg: 42.4,
 		color: "Brown",
 		eggGroups: ["Field"],
+		requiredItem: "Diggersbinite"
 	},
 	talonflamemega: {
 		num: 663,
@@ -1484,6 +1583,7 @@ exports.BattlePokedex = {
 		weightkg: 24.5,
 		color: "Red",
 		eggGroups: ["Flying"],
+		requiredItem: "Talonflamite"
 	},
 	florgesmega: {
 		num: 671,
@@ -1498,6 +1598,7 @@ exports.BattlePokedex = {
 		weightkg: 10,
 		color: "White",
 		eggGroups: ["Fairy"],
+		requiredItem: "Florgesite"
 	},
 	pangoromega: {
 		num: 675,
@@ -1512,6 +1613,7 @@ exports.BattlePokedex = {
 		weightkg: 136,
 		color: "White",
 		eggGroups: ["Field", "Human-Like"],
+		requiredItem: "Pangorite"
 	},
 	meowsticmega: {
 		num: 678,
@@ -1526,6 +1628,7 @@ exports.BattlePokedex = {
 		weightkg: 8.5,
 		color: "Blue",
 		eggGroups: ["Field"],
+		requiredItem: "Meowstite"
 	},
 	slurpuffmega: {
 		num: 685,
@@ -1540,6 +1643,7 @@ exports.BattlePokedex = {
 		weightkg: 5,
 		color: "White",
 		eggGroups: ["Fairy"],
+		requiredItem: "Slurpuffite"
 	},
 	dragalgemega: {
 		num: 685,
@@ -1554,6 +1658,7 @@ exports.BattlePokedex = {
 		weightkg: 81.5,
 		color: "Brown",
 		eggGroups: ["Water 1", "Dragon"],
+		requiredItem: "Dragalgite"
 	},
 	sylveonmega: {
 		num: 700,
@@ -1568,6 +1673,7 @@ exports.BattlePokedex = {
 		weightkg: 23.5,
 		color: "Pink",
 		eggGroups: ["Field"],
+		requiredItem: "Sylveonite"
 	},
 	goodramega : {
 		num: 706,
@@ -1580,6 +1686,7 @@ exports.BattlePokedex = {
 		abilities: {0: "Regenerator"}, 
 		heightm: 2,
 		weightkg: 150.5, 
+		requiredItem: "Goodranite"
 	},
 	klefkimega : {
 		num: 707,
@@ -1592,6 +1699,7 @@ exports.BattlePokedex = {
 		abilities: {0: "Lightning Rod"}, 
 		heightm: 2,
 		weightkg: 3, 
+		requiredItem: "Klefkite"
 	},
 	avaluggmega : {
 		num: 713,
@@ -1604,6 +1712,7 @@ exports.BattlePokedex = {
 		abilities: {0: "Filter"}, 
 		heightm: 2,
 		weightkg: 505, 
+		requiredItem: "Avaluggite"
 	},
 	decidueyemega: {
 		num: 724,
@@ -1618,6 +1727,7 @@ exports.BattlePokedex = {
 		weightkg: 36.6,
 		color: "Brown",
 		eggGroups: ["Flying"],
+		requiredItem: "Deciduite"
 	},
 	incineroarmega: {
 		num: 727,
@@ -1632,6 +1742,7 @@ exports.BattlePokedex = {
 		weightkg: 83,
 		color: "Red",
 		eggGroups: ["Field"],
+		requiredItem: "Incinerite"
 	},
 	primarinamega: {
 		num: 730,
@@ -1646,6 +1757,7 @@ exports.BattlePokedex = {
 		weightkg: 44,
 		color: "Blue",
 		eggGroups: ["Water 1", "Field"],
+		requiredItem: "Primarinite"
 	},
 	toucannonmega: {
 		num: 733,
@@ -1660,6 +1772,7 @@ exports.BattlePokedex = {
 		weightkg: 26,
 		color: "Black",
 		eggGroups: ["Flying"],
+		requiredItem: "Toucannite"
 	},
 	vikavoltmega: {
 		num: 738,
@@ -1674,6 +1787,7 @@ exports.BattlePokedex = {
 		weightkg: 45,
 		color: "Blue",
 		eggGroups: ["Bug"],
+		requiredItem: "Vikavoltite"
 	},
 	crabominablemega : {
 		num: 740,
@@ -1688,6 +1802,7 @@ exports.BattlePokedex = {
 		weightkg: 180, 
 		color: "White",
 		eggGroups: ["Water 3"],
+		requiredItem: "Crabominite"
 	},
 	araquanidmega: {
 		num: 752,
@@ -1702,6 +1817,7 @@ exports.BattlePokedex = {
 		weightkg: 82,
 		color: "Green",
 		eggGroups: ["Water 1", "Bug"],
+		requiredItem: "Araquanite"
 	},
 	shiinoticmega: {
 		num: 756,
@@ -1716,6 +1832,7 @@ exports.BattlePokedex = {
 		weightkg: 11.5,
 		color: "Purple",
 		eggGroups: ["Grass"],
+		requiredItem: "Shiinotite"
 	},
 	golisopodmega: {
 		num: 784,
@@ -1730,6 +1847,7 @@ exports.BattlePokedex = {
 		weightkg: 108,
 		color: "Gray",
 		eggGroups: ["Bug", "Water 3"],
+		requiredItem: "Golisopodite"
 	},
 	silvallymega: {
 		num: 773,
@@ -1744,6 +1862,7 @@ exports.BattlePokedex = {
 		weightkg: 100.5,
 		color: "Gray",
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Blank Memory"
 	},
 	silvallyelectric: {
 		num: 773,
@@ -1776,6 +1895,7 @@ exports.BattlePokedex = {
 		prevo: "typenull",
 		evoLevel: 2,
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Electric Memory"
 	},
 	silvallyfire: {
 		num: 773,
@@ -1808,6 +1928,7 @@ exports.BattlePokedex = {
 		prevo: "typenull",
 		evoLevel: 2,
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Fire Memory"
 	},
 	silvallygrass: {
 		num: 773,
@@ -1840,6 +1961,7 @@ exports.BattlePokedex = {
 		prevo: "typenull",
 		evoLevel: 2,
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Grass Memory"
 	},
 	silvallyice: {
 		num: 773,
@@ -1872,6 +1994,7 @@ exports.BattlePokedex = {
 		prevo: "typenull",
 		evoLevel: 2,
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Ice Memory"
 	},
 	silvallywater: {
 		num: 773,
@@ -1905,6 +2028,7 @@ exports.BattlePokedex = {
 		prevo: "typenull",
 		evoLevel: 2,
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Water Memory"
 	},
 	kommoomega: {
 		num: 784,
@@ -1919,6 +2043,7 @@ exports.BattlePokedex = {
 		weightkg: 78.2,
 		color: "Gray",
 		eggGroups: ["Dragon"],
+		requiredItem: "Kommonite"
 	},
 	tapukokomega: {
 		num: 785,
@@ -1933,6 +2058,7 @@ exports.BattlePokedex = {
 		weightkg: 20.5,
 		color: "Yellow",
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Tapu Kokite"
 	},
 	tapulelemega: {
 		num: 786,
@@ -1947,6 +2073,7 @@ exports.BattlePokedex = {
 		weightkg: 18.6,
 		color: "Pink",
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Tapu Lelite"
 	},
 	tapubulumega: {
 		num: 787,
@@ -1961,6 +2088,7 @@ exports.BattlePokedex = {
 		weightkg: 45.5,
 		color: "Red",
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Tapu Bulite"
 	},
 	tapufinimega: {
 		num: 788,
@@ -1975,6 +2103,7 @@ exports.BattlePokedex = {
 		weightkg: 21.2,
 		color: "Purple",
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Tapu Finite"
 	},
 	nihilegomega: {
 		num: 793,
@@ -1989,6 +2118,7 @@ exports.BattlePokedex = {
 		weightkg: 55.5,
 		color: "White",
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Nihilegite"
 	},
 	buzzwolemega: {
 		num: 794,
@@ -2003,6 +2133,7 @@ exports.BattlePokedex = {
 		weightkg: 333.6,
 		color: "Red",
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Buzzwolite"
 	},
 	pheromosamega: {
 		num: 795,
@@ -2017,6 +2148,7 @@ exports.BattlePokedex = {
 		weightkg: 25,
 		color: "White",
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Pheromosite"
 	},
 	xurkitreemega: {
 		num: 796,
@@ -2031,6 +2163,7 @@ exports.BattlePokedex = {
 		weightkg: 100,
 		color: "Black",
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Xurkitite"
 	},
 	celesteelamega: {
 		num: 797,
@@ -2045,6 +2178,7 @@ exports.BattlePokedex = {
 		weightkg: 999.9,
 		color: "Green",
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Celesteelite"
 	},
 	kartanamega: {
 		num: 798,
@@ -2059,6 +2193,7 @@ exports.BattlePokedex = {
 		weightkg: 0.1,
 		color: "White",
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Kartanite"
 	},
 	guzzlordmega: {
 		num: 799,
@@ -2073,87 +2208,83 @@ exports.BattlePokedex = {
 		weightkg: 888,
 		color: "Black",
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Guzzlordite"
 	},
 	golurkmega : {
-num: 623,
-species: "Golurk-Mega",
-baseSpecies: "Golurk",
-forme: "Mega",
-formeLetter: "M", 
-types: ["Ground", "Fire"], 
-baseStats:{hp: 89, atk: 149, def: 110, spa: 50, spd: 110, spe: 70},
-abilities: {0: "Speed Boost"}, 
-evoLevel: 1,
-heightm: 2.8, 
-weightkg: 330, 
-},
-
-cofagrigusmega : {
-num: 563,
-species: "Cofagrigus-Mega",
-baseSpecies: "Cofagrigus",
-forme: "Mega",
-formeLetter: "M", 
-types: ["Ghost"], 
-baseStats:{hp: 58, atk: 70, def: 115, spa: 135, spd: 105, spe: 100},
-abilities: {0: "Entomb"},
-evoLevel: 1,
-heightm: 76.5, 
-weightkg: 76.5, 
-},
-
-sigilyphmega : {
-num: 561,
-species: "Sigilyph-Mega",
-baseSpecies: "Sigilyph",
-forme: "Mega",
-formeLetter: "M", 
-types: ["Psychic", "Flying"], 
-baseStats:{hp: 72, atk: 58, def: 110, spa: 133, spd: 110, spe: 107},
-abilities: {0: "Forsee"}, 
-evoLevel: 1,
-heightm: 1.4, 
-weightkg: 14, 
-},
-
-samurottmega: {
-num: 503, 
-species: "Samurott-Mega", 
-baseSpecies: "Samurott", 
-forme: "Mega", 
-formeLetter: "M", 
-types:["Water"],
-baseStats: {hp: 95, atk: 152, def: 105, spa: 76, spd: 105, spe: 95}, 
-abilities: {0: "Supreme Samurai"}, 
-weightkg: 94.6, 
-evoLevel: 1,
-},
-
-serperiormega: {
-num: 497, 
-species: "Serperior-Mega", 
-baseSpecies: "Serperior", 
-forme: "Mega", 
-formeLetter: "M", 
-types:["Grass"],
-baseStats: {hp: 75, atk: 125, def: 105, spa: 105, spd: 105, spe: 113}, 
-abilities: {0: "Regal Reversal"}, 
-weightkg: 63, 
-evoLevel: 1,
-},
-
-emboarmega: {
-num: 500, 
-species: "Emboar-Mega", 
-baseSpecies: "Emboar", 
-forme: "Mega", 
-formeLetter: "M", 
-types:["Fire", "Fighting"],
-baseStats: {hp: 110, atk: 154, def: 125, spa: 99, spd: 85, spe: 55}, 
-abilities: {0: "Stamina"}, 
-weightkg: 400, 
-evoLevel: 1,
-},
+		num: 623,
+		species: "Golurk-Mega",
+		baseSpecies: "Golurk",
+		forme: "Mega",
+		formeLetter: "M", 
+		types: ["Ground", "Fire"], 
+		baseStats:{hp: 89, atk: 149, def: 110, spa: 50, spd: 110, spe: 70},
+		abilities: {0: "Speed Boost"}, 
+		heightm: 2.8, 
+		weightkg: 330, 
+		requiredItem: "Golurkite"
+	},
+	cofagrigusmega : {
+		num: 563,
+		species: "Cofagrigus-Mega",
+		baseSpecies: "Cofagrigus",
+		forme: "Mega",
+		formeLetter: "M", 
+		types: ["Ghost"], 
+		baseStats:{hp: 58, atk: 70, def: 115, spa: 135, spd: 105, spe: 100},
+		abilities: {0: "Entomb"},
+		heightm: 76.5, 
+		weightkg: 76.5, 
+		requiredItem: "Cofagrigusite"
+	},
+	sigilyphmega : {
+		num: 561,
+		species: "Sigilyph-Mega",
+		baseSpecies: "Sigilyph",
+		forme: "Mega",
+		formeLetter: "M", 
+		types: ["Psychic", "Flying"], 
+		baseStats:{hp: 72, atk: 58, def: 110, spa: 133, spd: 110, spe: 107},
+		abilities: {0: "Forsee"}, 
+		heightm: 1.4, 
+		weightkg: 14, 
+		requiredItem: "Sigilyphite"
+	},
+	samurottmega: {
+		num: 503, 
+		species: "Samurott-Mega", 
+		baseSpecies: "Samurott", 
+		forme: "Mega", 
+		formeLetter: "M", 
+		types:["Water"],
+		baseStats: {hp: 95, atk: 152, def: 105, spa: 76, spd: 105, spe: 95}, 
+		abilities: {0: "Supreme Samurai"}, 
+		weightkg: 94.6, 
+		requiredItem: "Samurottite"
+	},
+	serperiormega: {
+		num: 497, 
+		species: "Serperior-Mega", 
+		baseSpecies: "Serperior", 
+		forme: "Mega", 
+		formeLetter: "M", 
+		types:["Grass"],
+		baseStats: {hp: 75, atk: 125, def: 105, spa: 105, spd: 105, spe: 113}, 
+		abilities: {0: "Regal Reversal"}, 
+		weightkg: 63, 
+		requiredItem: "Serperionite"
+	},
+	emboarmega: {
+		num: 500, 
+		species: "Emboar-Mega", 
+		baseSpecies: "Emboar", 
+		forme: "Mega", 
+		formeLetter: "M", 
+		types:["Fire", "Fighting"],
+		baseStats: {hp: 110, atk: 154, def: 125, spa: 99, spd: 85, spe: 55}, 
+		abilities: {0: "Stamina"}, 
+		weightkg: 400, 
+		requiredItem: "Emboarite"
+	},
 
 	// MFA End
 	// FE Start
