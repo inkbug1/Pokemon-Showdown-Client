@@ -6,7 +6,7 @@ exports.BattlePokedex = {
 	   species: "Fearow-Mega",
 	   baseSpecies: "Fearow",
 	   forme: "Mega",
-	   formeLetter: "Q",
+	   formeLetter: "M",
 	   types: ["Dark","Flying"],
 	   baseStats: {hp: 65, atk: 130, def: 85, spa: 61, spd: 81, spe: 120},
 	   abilities: {0: "Home-In"},
@@ -15,9 +15,10 @@ exports.BattlePokedex = {
 	   color: "Brown",
 	   evoLevel: 1,
 	   eggGroups: ["Flying"],
+		requiredItem: "Fearonite"
 	},
 	arbokmega: {
-       num: 24,
+      num: 24,
 	   species: "Arbok-Mega",
 	   baseSpecies: "Arbok",
 	   forme: "Mega",
