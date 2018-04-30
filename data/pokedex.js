@@ -2280,9 +2280,10 @@ exports.BattlePokedex = {
 		forme: "Mega", 
 		formeLetter: "M", 
 		types:["Fire", "Fighting"],
-		baseStats: {hp: 110, atk: 154, def: 125, spa: 99, spd: 85, spe: 55}, 
-		abilities: {0: "Stamina"}, 
+		baseStats: {hp: 110, atk: 153, def: 95, spa: 110, spd: 95, spe: 65}, 
+		abilities: {0: "Pigsty"}, 
 		weightkg: 400, 
+		evoLevel: 1,
 		requiredItem: "Emboarite"
 	},
 
