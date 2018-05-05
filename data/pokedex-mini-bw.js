@@ -381,6 +381,7 @@ exports.BattlePokemonSpritesBW = {
 	masquerain:{num:284,front:{w:73,h:65},back:{w:63,h:65}},
 	shroomish:{num:285,front:{w:44,h:48},back:{w:44,h:46}},
 	breloom:{num:286,front:{w:57,h:71},back:{w:51,h:72}},
+	breloommega:{num:286,front:{w:57,h:71},back:{w:51,h:72}},
 	slakoth:{num:287,front:{w:52,h:31},back:{w:51,h:36}},
 	vigoroth:{num:288,front:{w:67,h:65},back:{w:54,h:71}},
 	slaking:{num:289,front:{w:75,h:61},back:{w:79,h:59}},
