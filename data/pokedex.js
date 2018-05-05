@@ -1,4 +1,4 @@
-exports.BattlePokedex = {
+﻿exports.BattlePokedex = {
 	// MFA Start
 	
 	fearowmega: {
@@ -15478,7 +15478,7 @@ exports.BattlePokedex = {
 	},
 	// FE End
 	// Eternal Start 
-	pansageeternal: {
+		pansageeternal: {
 		num: 511,
 		species: "Pansage-Eternal",
 		baseSpecies: "Pansage",
@@ -15622,7 +15622,7 @@ exports.BattlePokedex = {
 	lampenteternal: {
 		num: 608,
 		species: "Lampent-Eternal",
-		baseSpecies: "Murkrow",
+		baseSpecies: "Lampent",
 		forme: "Eternal",
 		formeLetter: "E",
 		types: ["Ghost", "Fire"],
@@ -15659,13 +15659,13 @@ exports.BattlePokedex = {
 			0: "No Guard"
 		},
 	},
-	kabadraeternal: {
+	kadabraeternal: {
 		num: 64,
 		species: "Kadabra-Eternal",
 		baseSpecies: "Kadabra",
 		forme: "Eternal",
 		formeLetter: "E",
-		types: ["Psyhic", "Ice"],
+		types: ["Psychic", "Ice"],
 		baseStats: {
 			hp: 60,
 			atk: 35,
@@ -17252,26 +17252,6 @@ exports.BattlePokedex = {
 			0: "Iron Barbs"
 		},
 	},
-	eternal: {
-		num: 44,
-		species: "Gloom-Eternal",
-		baseSpecies: "Gloom",
-		forme: "Eternal",
-		formeLetter: "E",
-		types: ["Dark", "Poison"],
-		baseStats: {
-			hp: 80,
-			atk: 70,
-			def: 90,
-			spa: 110,
-			spd: 95,
-			spe: 44
-		},
-		abilities: {
-			0: "Chlorophyll",
-			H: "Stench"
-		},
-	},
 	joltiketernal: {
 		num: 595,
 		species: "Joltik-Eternal",
@@ -17292,6 +17272,176 @@ exports.BattlePokedex = {
 			1: "Unnerve",
 			H: "Swarm"
 		},
+	},
+	omanyteeternal: {
+		num: 138,
+		types: ["Water"],
+		species: "Omanyte-Eternal",
+		baseSpecies: "Omanyte",
+		forme: "Eternal",
+		formeLetter: "E",
+		baseStats: {
+			hp: 70,
+			atk: 40,
+			def: 130,
+			spa: 95,
+			spd: 115,
+			spe: 44
+		},
+		abilities: {
+			0: "Swift Swim",
+			1: "Shell Armor",
+			H: "Weak Armor"
+		},
+		weightkg: 7.5,
+	},
+	kabutoeternal: {
+		num: 140,
+		types: ["Water", "Steel"],
+		species: "Kabuto-Eternal",
+		baseSpecies: "Kabuto",
+		forme: "Eternal",
+		formeLetter: "E",
+		baseStats: {
+			hp: 100,
+			atk: 100,
+			def: 100,
+			spa: 47,
+			spd: 47,
+			spe: 100
+		},
+		abilities: {
+			0: "Swift Swim",
+			1: "Battle Armor",
+			H: "Weak Armor"
+		},
+		weightkg: 11.5,
+	},
+	lileepeternal: {
+		num: 345,
+		types: ["Grass", "Water"],
+		species: "Lileep-Eternal",
+		baseSpecies: "Lileep",
+		forme: "Eternal",
+		formeLetter: "E",
+		baseStats: {
+			hp: 104,
+			atk: 39,
+			def: 104,
+			spa: 104,
+			spd: 104,
+			spe: 39
+		},
+		abilities: {
+			0: "Suction Cups",
+			H: "Storm Drain"
+		},
+		weightkg: 23.8,
+	},
+	anoritheternal: {
+		num: 347,
+		types: ["Bug", "Water"],
+		species: "Anorith-Eternal",
+		baseSpecies: "Anorith",
+		forme: "Eternal",
+		formeLetter: "E",
+		baseStats: {
+			hp: 57,
+			atk: 133,
+			def: 57,
+			spa: 57,
+			spd: 57,
+			spe: 133
+		},
+		abilities: {
+			0: "Battle Armor",
+			H: "Swift Swim"
+		},
+		weightkg: 100,
+	},
+	tirtougaeternal: {
+num: 564, 
+types:["Steel", "Water"],
+species: "Tirtouga-Eternal", 
+baseSpecies: "Tirtouga", 
+forme: "Eternal", 
+formeLetter: "E", 
+baseStats: {hp:80, atk: 84, def: 130, spa: 60, spd: 130, spe: 10}, 
+abilities: {0: "Solid Rock", 1: "Sturdy", H: "Swift Swim"},
+weightkg: 16.5, 
+},
+archeneternal: {
+num: 566, 
+types:["Rock"],
+species: "Archen-Eternal", 
+baseSpecies: "Archen", 
+forme: "Eternal", 
+formeLetter: "E", 
+baseStats: {hp:74, atk: 65, def: 112, spa: 65, spd: 110, spe: 140}, 
+abilities: {0: "Defeatist"},
+weightkg: 9.5, 
+},
+tyrunteternal: {
+num: 696, 
+types:["Dark", "Dragon"],
+species: "Tyrunt-Eternal", 
+baseSpecies: "Tyrunt", 
+forme: "Eternal", 
+formeLetter: "E", 
+baseStats: {hp:100, atk: 100, def: 80, spa: 40, spd: 80, spe: 120}, 
+abilities: {0: "Strong Jaw", H: "Sturdy"},
+weightkg: 26, 
+},
+amauraeternal: {
+	num: 698,
+	species: "Amaura-Eternal",
+	baseSpecies: "Amaura",
+	forme: "Eternal",
+	formeLetter: "E", 
+	types: ["Fairy", "Ice"], 
+	baseStats:{hp: 120, atk: 40, def: 100, spa: 80, spd: 100, spe: 80},
+	abilities: {0: "Refrigerate", H: "Snow Warning"},
+	weightkg: 25.2,
+	},	
+	pumpkabooeternal: {
+	num: 710,
+	species: "Pumpkaboo-Eternal",
+	baseSpecies: "Pumpkaboo",
+	forme: "Eternal",
+	formeLetter: "E", 
+	types: ["Grass", "Fire"], 
+	baseStats:{hp: 49, atk: 46, def: 120, spa: 124, spd: 85, spe: 69},
+	abilities: {0: "Pickup", 1: "Frisk", H: "Insomnia"},
+	},
+	pumpkaboosmalleternal: {
+	num: 710,
+	species: "Pumpkaboo-Small-Eternal",
+	baseSpecies: "Pumpkaboo-Small",
+	forme: "Eternal",
+	formeLetter: "E", 
+	types: ["Grass", "Fire"], 
+	baseStats:{hp: 44, atk: 46, def: 120, spa: 124, spd: 85, spe: 74},
+	abilities: {0: "Pickup", 1: "Frisk", H: "Insomnia"},
+	},
+	pumpkaboolargeeternal: {
+	num: 710,
+	species: "Pumpkaboo-Large-Eternal",
+	baseSpecies: "Pumpkaboo-Large",
+	forme: "Eternal",
+	formeLetter: "E", 
+	types: ["Grass", "Fire"], 
+	baseStats:{hp: 54, atk: 46, def: 120, spa: 124, spd: 85, spe: 64},
+	abilities: {0: "Pickup", 1: "Frisk", H: "Insomnia"},
+	},
+	pumpkaboosupereternal: {
+	num: 710,
+	species: "Pumpkaboo-Super-Eternal",
+	baseSpecies: "Pumpkaboo-Super",
+	forme: "Eternal",
+	formeLetter: "E", 
+	types: ["Grass", "Fire"], 
+	baseStats:{hp: 59, atk: 46, def: 120, spa: 124, spd: 85, spe: 59},
+	abilities: {0: "Pickup", 1: "Frisk", H: "Insomnia"},
 	},
 	// Eternal End
 	// Eeveed Start
