@@ -1,98 +1,35 @@
 exports.BattleAbilities = {
 // MFA Start
-	 	'forsee': {
+	 	"forsee": {
 	shortDesc: "Uses Future Sight on switch out.",
-	onSwitchOut: function(source) {
-		this.useMove('Future Sight', source);
-	},
 	id: "forsee",
 	name: "Forsee",
 }, 
 "supremesamurai": {
 	shortDesc: "The user's Blade-based moves (Cross Poison, Cut, Fury Cutter, Leaf Blade, Megahorn, Night Slash, Psycho Cut, Razor Shell, Sacred Sword, Secret Sword, Slash, Smart Strike, Solar Blade, X-Scissor) are always a critical hit.",
-	onModifyMove: function(move) {
-		if (move.name === 'Cross Poison' || move.name === 'Cut' || move.name === 'Fury Cutter' || move.name === 'Leaf Blade' || move.name === 'Megahorn' || move.name === 'Night Slash' || move.name === 'Psycho Cut' || move.name === 'Razor Shell' || move.name === 'Sacred Sword' || move.name === 'Secret Sword' || move.name === 'Slash' || move.name === 'Smart Strike' || move.name === 'Solar Blade' || move.name === 'X-Scissor') {
-			move.willCrit = true;
-		}
-	},
 	id: "supremesamurai",
 	name: "Supreme Samurai",
 },
 	"entomb": {
 		shortDesc: "Traps Ghost types and has +4 priority when targeting them.",
-		onFoeTrapPokemon: function (pokemon) {
-			if (pokemon.hasType('Ghost') && this.isAdjacent(pokemon, this.effectData.target)) {
-				pokemon.tryTrap(true);
-			}
-		},
-		onFoeMaybeTrapPokemon: function (pokemon, source) {
-			if (!source) source = this.effectData.target;
-			if ((!pokemon.knownType || pokemon.hasType('Ghost')) && this.isAdjacent(pokemon, source)) {
-				pokemon.maybeTrapped = true;
-			}
-		},
-        onModifyPriority: function (priority, pokemon) {
-			for (const target of pokemon.side.foe.active) {
-			if (!target || target.fainted) continue;
-                        if (target.hasType('Ghost')) return priority +4;
-                        }
-		},
-	/*	onFoeSwitchOut: function (pokemon) {
-			for (const source of pokemon.side.foe.active) {
-			if (!source || source.fainted) continue;
-			if (pokemon.hasType('Ghost') && this.isAdjacent(pokemon, this.effectData.target)) {
-				this.add('-ability', source, 'Entomb');
-				return null;
-			}
-			}
-			},*/
-			onFoeImmunity: function (type, pokemon) {
-			//for (const target of pokemon.side.foe.active) {
-			//if (!target || target.fainted) continue;
-			if (type === 'trapped') return true;
-		//	}
-		},
 		id: "entomb",
 		name: "Entomb",
 	},
 
 regalreversal: {
 	shortDesc: "Super-effective attacks used against this Pokemon have their damage reduced by 25% and do 50% recoil to the user.",
-	onSourceModifyDamage: function(damage, source, target, move) {
-		if (move.typeMod > 0) {
-			return this.chainModify(0.75);
-			move.regalRecoil = true;
-		}
-	},
-	onFoeModifyMove: function (move) {
-			if (move.regalRecoil = true) {
-				move.recoil = [1, 2];
-			}
-		},
     id: "regalreversal",
 	name: "Regal Reversal",
 },
 	"absolutezero": {
 		shortDesc: "Freezes opponent upon switch-in.",
-		onStart: function(source) {
-			this.useMove('Freeze', source);
-		},
 		id: "absolutezero",
 		name: "Absolute Zero",
 	},
 	"acidicpoison": {
 		shortDesc: "This Pokemon can hit Steel types with Poison moves.",
-		onModifyMovePriority: -5,
-		onModifyMove: function (move) {
-			if (!move.ignoreImmunity) move.ignoreImmunity = {};
-			if (move.ignoreImmunity !== true) {
-				move.ignoreImmunity['Poison'] = true;
-			}
-		},
 		id: "acidicpoison",
 		name: "Acidic Poison",
-		rating: 3,
-		num: 113,
 	},
 	"adaptability": {
 		desc: "This Pokemon's moves that match one of its types have a same-type attack bonus (STAB) of 2 instead of 1.5.",
