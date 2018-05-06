@@ -1,4 +1,3 @@
-﻿'use strict';
 exports.BattleAbilities = {
 	"absolutezero": {
 		shortDesc: "Freezes foes that make contact with the user.",
