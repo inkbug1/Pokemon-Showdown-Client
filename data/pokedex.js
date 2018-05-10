@@ -15478,8 +15478,6 @@
 	},
 	// FE End
 	// Eternal Start
-	'use strict';
-exports.BattlePokedex = {
 	pansageeternal: {
 		num: 511,
 		species: "Pansage-Eternal",
@@ -17535,7 +17533,6 @@ amauraeternal: {
 	types: ["Grass", "Fire"], 
 	baseStats:{hp: 59, atk: 46, def: 120, spa: 124, spd: 85, spe: 59},
 	abilities: {0: "Pickup", 1: "Frisk", H: "Insomnia"},
-	},
 	weightkg: 15,
 	},
 	// Eternal End
