@@ -477,15 +477,15 @@
 		zMovePower: 175,
 		contestType: "Clever",
 	},
-	"stonepalm": {
+	"stoneslam": {
 		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
 		desc: "Has a 20% chance to flinch the target.",
 		shortDesc: "20% chance to flinch the foe(s).",
-		id: "stonepalm",
+		id: "stoneslam",
 		isViable: true,
-		name: "Stone Palm",
+		name: "Stone Slam",
 		pp: 10,
 		priority: 0,
 		flags: {
