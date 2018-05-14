@@ -562,6 +562,7 @@ exports.BattlePokemonSprites = {
 	glameow:{num:431,front:{w:60,h:86},back:{w:79,h:94}},
 	purugly:{num:432,front:{w:70,h:81},back:{w:70,h:80}},
 	chingling:{num:433,front:{w:50,h:66},back:{w:55,h:72}},
+	chinglingeternal:{num:433,front:{w:50,h:66},back:{w:55,h:72}},
 	stunky:{num:434,front:{w:85,h:66},back:{w:107,h:73}},
 	skuntank:{num:435,front:{w:87,h:79},back:{w:88,h:81}},
 	bronzor:{num:436,front:{w:40,h:55},back:{w:36,h:55}},
