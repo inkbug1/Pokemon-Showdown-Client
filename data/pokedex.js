@@ -15478,7 +15478,7 @@
 	},
 	// FE End
 	// Eternal Start
-	pansageeternal: {
+		pansageeternal: {
 		num: 511,
 		species: "Pansage-Eternal",
 		baseSpecies: "Pansage",
@@ -16749,7 +16749,7 @@
 			hp: 64,
 			atk: 44,
 			def: 124,
-			spa: 144,
+			spa: 114,
 			spd: 144,
 			spe: 54
 		},
@@ -17286,9 +17286,9 @@
 		types: ["Steel"],
 		baseStats: {
 			hp: 90,
-			atk: 135,
+			atk: 105,
 			def: 96,
-			spa: 39,
+			spa: 69,
 			spd: 84,
 			spe: 75
 		},
@@ -17534,7 +17534,7 @@ amauraeternal: {
 	baseStats:{hp: 59, atk: 46, def: 120, spa: 124, spd: 85, spe: 59},
 	abilities: {0: "Pickup", 1: "Frisk", H: "Insomnia"},
 	weightkg: 15,
-	},
+},
 	// Eternal End
 	// Eeveed Start
 	fletchinder: {
