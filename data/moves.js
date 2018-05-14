@@ -1,7 +1,7 @@
-﻿exports.BattleMovedex = {
+exports.BattleMovedex = {
 	
 	// Eternal Moves Start
-		"wrathofnature": {
+	"wrathofnature": {
 		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
@@ -45,7 +45,7 @@
 			mirror: 1
 		},
 		secondary: {
-			chance: 10,
+			chance: 50,
 			status: 'brn',
 		},
 		onPrepareHit: function(target, source, move) {
@@ -98,17 +98,18 @@
 		pp: 10,
 		priority: 0,
 		flags: {
+			contact: 1,
 			protect: 1,
 			mirror: 1
 		},
 		onPrepareHit: function(target, source, move) {
 			this.attrLastMove('[still]');
-			this.add('-anim', source, "Thunder", target);
+			this.add('-anim', source, "Volt Tackle", target);
 		},
 		secondary: false,
 		target: "normal",
 		type: "Electric",
-		zMovePower: 200,
+		zMovePower: 180,
 		contestType: "Beautiful",
 	},
 	"evolutionblast": {
@@ -139,7 +140,7 @@
 		},
 		target: "normal",
 		type: "Normal",
-		zMovePower: 25,
+		zMovePower: 200,
 	},
 	"evolutionblastwater": {
 		shortDesc: "Changes type after each hit (Water -> Electric -> Fire -> Psychic -> Dark -> Grass -> Ice -> Fairy",
@@ -313,7 +314,6 @@
 		accuracy: 95,
 		basePower: 150,
 		category: "Physical",
-		desc: "No additional effect.",
 		shortDesc: "No additional effect.",
 		id: "darkcrowdive",
 		name: "Dark Crow Dive",
@@ -323,9 +323,6 @@
 			contact: 1,
 			protect: 1,
 			mirror: 1
-		},
-		onEffectiveness: function(typeMod, type, move) {
-			return typeMod + this.getEffectiveness('Flying', type);
 		},
 		onPrepareHit: function(target, source, move) {
 			this.attrLastMove('[still]');
@@ -359,7 +356,7 @@
 		secondary: false,
 		target: "normal",
 		type: "Ghost",
-		zMovePower: 200,
+		zMovePower: 180,
 		contestType: "Beautiful",
 	},
 	"wispburst": {
@@ -417,7 +414,7 @@
 		secondary: false,
 		target: "normal",
 		type: "Steel",
-		zMovePower: 120,
+		zMovePower: 190,
 		contestType: "Tough",
 	},
 	"brainfreeze": {
@@ -459,6 +456,7 @@
 		priority: 0,
 		flags: {
 			protect: 1,
+			punch: 1,
 			mirror: 1,
 			contact: 1
 		},
@@ -545,7 +543,7 @@
 		id: "particlecannon",
 		isViable: true,
 		name: "Particle Cannon",
-		pp: 2,
+		pp: 5,
 		priority: 0,
 		flags: {
 			protect: 1,
@@ -587,7 +585,6 @@
 		flags: {
 			protect: 1,
 			mirror: 1,
-			punch: 1,
 			heal: 1
 		},
 		onPrepareHit: function(target, source, move) {
@@ -735,7 +732,7 @@
 	"highnoonclaw": {
 		accuracy: 100,
 		basePower: 100,
-		category: "Physical",
+		category: "Special",
 		desc: "Deals 1.5* damage if the weather is Sunny.",
 		shortDesc: "Deals 1.5* damage if the weather is Sunny.",
 		id: "highnoonclaw",
@@ -744,7 +741,6 @@
 		pp: 20,
 		priority: 0,
 		flags: {
-			contact: 1,
 			protect: 1,
 			mirror: 1
 		},
@@ -796,7 +792,7 @@
 		contestType: "Beautiful",
 	},
 	"paragongift": {
-		accuracy: 100,
+		accuracy: true,
 		basePower: 0,
 		category: "Status",
 		desc: "The teammate that switches in gains +1 to Defense and Special Defense. User faints.",
@@ -807,8 +803,7 @@
 		pp: 5,
 		priority: 0,
 		flags: {
-			protect: 1,
-			reflectable: 1,
+			snatch: 1,
 			mirror: 1,
 			authentic: 1
 		},
@@ -865,9 +860,9 @@
 			if (!pokemon.volatiles['magicalegg']) return 0;
 			return pokemon.volatiles['magicalegg'].damage || 1;
 		},
-		category: "Physical",
+		category: "Special",
 		desc: "Deals damage to the last foe to hit the user with an attack this turn equal to 1.5 times the HP lost by the user from that attack. If the user did not lose HP from the attack, this move deals damage with a Base Power of 1 instead. If that foe's position is no longer in use, the damage is done to a random foe in range. Only the last hit of a multi-hit attack is counted. Fails if the user was not hit by a foe's attack this turn.",
-		shortDesc: "If hit by an attack, returns 1.5x damage.",
+		shortDesc: "If hit by an attack, returns the damage taken.",
 		id: "magicalegg",
 		name: "Magical Egg",
 		pp: 10,
@@ -940,15 +935,15 @@
 		zMovePower: 140,
 		contestType: "Cute",
 	},
-	"eeirewhiteout": {
+	"eeriewhiteout": {
 		accuracy: true,
 		basePower: 50,
 		category: "Special",
 		desc: "Sets up Hail. Reduces the target's Special Defense by two stages. 10% chance to freeze the target.",
 		shortDesc: "Sets up Hail. Reduces the target's Special Defense by two stages. 10% chance to freeze the target.",
-		id: "eeirewhiteout",
+		id: "eeriewhiteout",
 		isViable: true,
-		name: "Eeire Whiteout",
+		name: "Eerie Whiteout",
 		pp: 10,
 		priority: 0,
 		flags: {
@@ -1071,6 +1066,7 @@
 		pp: 10,
 		priority: 0,
 		flags: {
+			contact: 1,
 			protect: 1,
 			reflectable: 1,
 			mirror: 1
@@ -1137,12 +1133,12 @@
 	"pileup": {
 		accuracy: true,
 		basePower: 0,
-		category: "Special",
+		category: "Status",
 		desc: "The user gathers nutrients from the ground, restoring 50% of its maximum HP. This move has a 25% chance to raise the user's Attack, Defense, Special Attack, Special Defense, or Speed by 1 stage (basically 5% for each).",
 		shortDesc: "The user gathers nutrients from the ground, restoring 50% of its maximum HP. This move has a 25% chance to raise the user's Attack, Defense, Special Attack, Special Defense, or Speed by 1 stage (basically 5% for each).",
 		id: "pileup",
 		name: "Pile Up",
-		pp: 5,
+		pp: 10,
 		priority: 0,
 		flags: {
 			snatch: 1,
@@ -1211,9 +1207,7 @@
 			contact: 1
 		},
 		secondary: false,
-		onEffectiveness: function(typeMod, type) {
-			if (type === 'Fairy') return 1;
-		},
+		ignoreImmunity: true,
 		onPrepareHit: function(target, source, move) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Dragon Rush", target);
@@ -1235,6 +1229,7 @@
 		pp: 10,
 		priority: 0,
 		flags: {
+			contact: 1,
 			protect: 1,
 			mirror: 1
 		},
@@ -1353,7 +1348,7 @@
 		isViable: true,
 		name: "Tectonic Fault",
 		pp: 5,
-		priority: 0,
+		priority: 2,
 		flags: {
 			reflectable: 1
 		},
@@ -1450,6 +1445,7 @@
 		pp: 10,
 		priority: 0,
 		flags: {
+			heal: 1,
 			nonsky: 1
 		},
 		heal: [1, 2],
@@ -1510,8 +1506,7 @@
 		accuracy: 100,
 		basePower: 90,
 		category: "Physical",
-		desc: "Deals 1.5* damage if the weather is Rainy.",
-		shortDesc: "Deals 1.5* damage if the weather is Rainy.",
+		shortDesc: "Damage increased by 1.5x under rain. 30% chance to confuse its foe.",
 		id: "bamboobash",
 		isViable: true,
 		name: "Bamboo Bash",
@@ -1552,6 +1547,7 @@
 		pp: 10,
 		priority: 0,
 		flags: {
+			contact: 1,
 			protect: 1,
 			mirror: 1,
 			nonsky: 1
@@ -1568,6 +1564,31 @@
 		type: "Ground",
 		zMovePower: 200,
 		contestType: "Tough",
+	},
+	"swirlingpunch": {
+		accuracy: 100,
+		basePower: 90,
+		category: "Physical",
+		shortDesc: "10% chance of inducing sleep, 10% chance of inducing confusion. 80% chance of neither",
+		id: "swirlingpunch",
+		isViable: true,
+		name: "Swirling Punch",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondaries: [
+			{
+				chance: 10,
+				status: 'slp',
+			}, {
+				chance: 10,
+				volatileStatus: 'confusion',
+			},
+		],
+		target: "normal",
+		type: "Psychic",
+		zMovePower: 175,
+		contestType: "Cool",
 	},
 	"highwaymansstrike": {
 		accuracy: 90,
@@ -1640,7 +1661,6 @@
 		pp: 20,
 		priority: 0,
 		flags: {
-			contact: 1,
 			protect: 1,
 			mirror: 1,
 			authentic: 1
@@ -1712,6 +1732,7 @@
 		pp: 5,
 		priority: 0,
 		flags: {
+			contact: 1,
 			protect: 1,
 			mirror: 1
 		},
@@ -1729,19 +1750,20 @@
 	"meteoriteimpact": {
 		accuracy: 95,
 		basePower: 45,
-		category: "Special",
+		category: "Physical",
 		shortDesc: "Nearly always goes first.",
 		id: "meteoriteimpact",
 		name: "Meteorite Impact",
 		pp: 10,
 		priority: 2,
 		flags: {
+			contact: 1,
 			protect: 1,
 			mirror: 1
 		},
 		onPrepareHit: function(target, source, move) {
 			this.attrLastMove('[still]');
-			this.add('-anim', source, "Dazzling Gleam", target);
+			this.add('-anim', source, "Play Rough", target);
 		},
 		secondary: false,
 		target: "normal",
@@ -1781,21 +1803,16 @@
 				}
 			},
 		},
-		secondary: {
-			chance: 100,
-			self: {
-				boosts: {
-					spe: 1,
-				},
+		selfBoost: {
+			boosts: {
+				spe: 1,
 			},
 		},
 		onPrepareHit: function(target, source, move) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Close Combat", target);
 		},
-		onEffectiveness: function(typeMod, type) {
-			if (type === 'Ghost') return 1;
-		},
+		ignoreImmunity: true,
 		target: "normal",
 		type: "Fighting",
 		zMovePower: 190,
@@ -1804,7 +1821,7 @@
 	"razzledazzle": {
 		accuracy: 100,
 		basePower: 45,
-		category: "Physical",
+		category: "Special",
 		desc: "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit. 30% chance to burn the target.",
 		shortDesc: "Hits 2 times in one turn. 30% chance to burn the target.",
 		id: "razzledazzle",
@@ -1812,7 +1829,6 @@
 		pp: 20,
 		priority: 0,
 		flags: {
-			contact: 1,
 			protect: 1,
 			mirror: 1
 		},
@@ -1875,10 +1891,7 @@
 		pp: 5,
 		priority: 0,
 		flags: {
-			contact: 1,
-			protect: 1,
 			mirror: 1,
-			punch: 1,
 			heal: 1
 		},
 		onPrepareHit: function(target, source, move) {
@@ -1925,7 +1938,7 @@
 		target: "normal",
 		type: "Water",
 		zMoveBoost: {
-			def: 1
+			spa: 1
 		},
 		contestType: "Cute",
 	},
@@ -1948,13 +1961,10 @@
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Sludge Wave", target);
 		},
-		secondary: {
-			chance: 100,
-			status: 'psn',
-		},
+		status: 'psn',
 		target: "normal",
 		type: "Psychic",
-		zMovePower: 160,
+		zMovePower: 120,
 	},
 	"voidster": {
 		accuracy: 100,
@@ -2081,7 +2091,7 @@
 		secondary: false,
 		target: "normal",
 		type: "Fire",
-		zMovePower: 100,
+		zMovePower: 140,
 		contestType: "Cool",
 	},
 	"breakthrough": {
@@ -2190,12 +2200,13 @@
 		basePower: 90,
 		accuracy: 100,
 		category: "Special",
-		shortDesc: "Lileep recovers 50% of the damage done.",
+		shortDesc: "User recovers 50% of the damage done.",
 		id: "algae allure",
 		name: "Algae Allure",
 		pp: 10,
 		priority: 0,
 		flags: {
+			heal: 1,
 			protect: 1,
 			mirror: 1
 		},
@@ -2248,18 +2259,16 @@
 	aquaticambush: {
 		basePower: 90,
 		accuracy: 100,
-		category: "Special",
+		category: "Physical",
 		shortDesc: "On the following turn after using this move, Anorith is granted +1 Priority on any Bug-type move used or 50% extra power on any Water-type move used.",
 		id: "aquatic ambush",
 		name: "Aquatic Ambush",
 		pp: 10,
 		priority: 0,
 		flags: {
+			contact: 1,
 			protect: 1,
 			mirror: 1
-		},
-		onTryHit: function(target, source) {
-			if (source.volatiles['aquaticambush']) return false;
 		},
 		onHit: function(target, source) {
 			source.addVolatile('aquaticambush', source);
@@ -2301,7 +2310,7 @@
 		id: "tranquillity",
 		isViable: true,
 		name: "Tranquillity",
-		pp: 15,
+		pp: 10,
 		priority: 0,
 		flags: {
 			protect: 1,
@@ -2327,13 +2336,13 @@
 		category: "Status",
 		desc: " At start of the turn, the user charges itself in a really hot plasma courtain, then it heasl 50% of it max HP. If hitted during the charge phase with a contact move, the attacker will be burned (It's a mix between Beak Blast heating phase and a Recover move)",
 		shortDesc: "Burns on contact with the user before it moves. Recovers 50% of the total HP",
-		id: "Magnetic Charge",
+		id: "magneticcharge",
 		isViable: true,
 		name: "Magnetic Charge",
-		pp: 15,
+		pp: 10,
 		priority: -3,
 		flags: {
-			bullet: 1,
+			heal: 1,
 			protect: 1
 		},
 		beforeTurnCallback: function(pokemon) {
@@ -2493,52 +2502,52 @@
 	"bounceshield": {
 		accuracy: true,
 		basePower: 0,
-		damageCallback: function(pokemon) {
-			if (!pokemon.volatiles['bounceshield']) return 0;
-			return pokemon.volatiles['bounceshield'].damage || 1;
-		},
 		category: "Status",
-		shortDesc: "Prevents moves from affecting the user this turn. The foe takes any damage this pokemon wouldve taken",
+		shortDesc: "Prevents moves from affecting the user this turn. Returns half the damage it would've taken.",
 		id: "bounceshield",
+		isViable: true,
 		name: "Bounce Shield",
 		pp: 10,
-		priority: -4,
+		priority: 4,
 		flags: {},
-		beforeTurnCallback: function(pokemon) {
-			pokemon.addVolatile('bounceshield');
+		stallingMove: true,
+		volatileStatus: 'protect',
+		onPrepareHit: function (pokemon) {
+			return !!this.willAct() && this.runEvent('StallMove', pokemon);
 		},
-		onTryHit: function(target, source, move) {
-			if (!source.volatiles['metalburst']) return false;
-			if (source.volatiles['metalburst'].position === null) return false;
+		onHit: function (pokemon) {
+			pokemon.addVolatile('stall');
 		},
 		effect: {
 			duration: 1,
-			noCopy: true,
-			onStart: function(target, source, source2, move) {
-				this.effectData.position = null;
-				this.effectData.damage = 0;
+			onStart: function (target) {
+				this.add('-singleturn', target, 'Protect');
 			},
-			onRedirectTargetPriority: -1,
-			onRedirectTarget: function(target, source, source2) {
-				if (source !== this.effectData.target) return;
-				return source.side.foe.active[this.effectData.position];
-			},
-			onDamagePriority: -101,
-			onDamage: function(damage, target, source, effect) {
-				if (effect && effect.effectType === 'Move' && source.side !== target.side) {
-					this.effectData.position = source.position;
-					this.effectData.damage = damage;
-				}
-			},
-		},
-		onPrepareHit: function(target, source, move) {
-			this.attrLastMove('[still]');
-			this.add('-anim', target, "Magic Coat", source);
+			onTryHitPriority: 3,
+			onTryHit: function (target, source, move) {
+    if (!move.flags['protect']) {
+        if (move.isZ) move.zBrokeProtect = true;
+        return;
+    }
+    let damage = this.getDamage(source, target, move);
+    this.add('-activate', target, 'move: Protect');
+    source.moveThisTurnResult = true;
+    let lockedmove = source.getVolatile('lockedmove');
+    if (lockedmove) {
+        // Outrage counter is reset
+        if (source.volatiles['lockedmove'].duration === 2) {
+            delete source.volatiles['lockedmove'];
+        }
+    }
+    this.directDamage(damage, source, target);
+    return null;
+},
 		},
 		secondary: false,
 		target: "self",
 		type: "Psychic",
-		zMoveEffect: 'heal',
+		zMoveEffect: 'clearnegativeboost',
+		contestType: "Cute",
 	},
 	"goodtidings": {
 		accuracy: true,
@@ -2596,7 +2605,7 @@
 		},
 		secondary: false,
 		target: "self",
-		type: "Normal",
+		type: "Psychic",
 		zMoveEffect: 'healreplacement',
 	},
 	"searingscreen": {
@@ -2642,7 +2651,7 @@
 		secondary: false,
 		target: "foeSide",
 		type: "type",
-		zMovePower: 100,
+		zMoveBoost: {spe: 1},
 	},
 	"phantasmalbreak": {
 		accuracy: 100,
@@ -2706,7 +2715,7 @@
 			mirror: 1
 		},
 		onHit: function(pokemon) {
-			if (pokemon.side.sideConditions['stealthrock', 'spikes', 'toxicspikes', 'stickyweb']) {
+			if (pokemon.side.sideConditions['stealthrock'], ['spikes'], ['toxicspikes'], ['stickyweb']) {
 				return this.heal(this.modify(pokemon.maxhp, 0.667));
 			} else {
 				return this.heal(this.modify(pokemon.maxhp, 0.5));
@@ -2733,7 +2742,7 @@
 		target: "self",
 		type: "Water",
 		zMoveBoost: {
-			atk: 1
+			def: 1
 		},
 	},
 	"mythicalpower": {
@@ -2743,7 +2752,7 @@
 		shortDesc: "Resets the users negative stat changes and boosts Sp.Atk by 2.",
 		id: "mythicalpower",
 		name: "Mythical Power",
-		pp: 5,
+		pp: 10,
 		priority: 0,
 		flags: {
 			snatch: 1
@@ -2766,7 +2775,7 @@
 		secondary: false,
 		target: "self",
 		type: "Fairy",
-		zMoveEffect: 'heal',
+		zMoveEffect: 'crit2',
 	},
 	"eggoverboil": {
 		accuracy: 90,
@@ -2775,7 +2784,7 @@
 		shortDesc: "Hits twice, the first hit has a 50% chance to Soak its foe, and the second hit a 50% chance to burn it.",
 		id: "eggoverboil",
 		name: "Egg Overboil",
-		pp: 5,
+		pp: 10,
 		priority: 0,
 		flags: {
 			protect: 1,
@@ -2854,6 +2863,12 @@
 			}
 			return move.basePower;
 		},
+		accuracyCallback: function(pokemon, target, move) {
+				if (pokemon.volatiles.manifestdestiny && pokemon.volatiles.manifestdestiny.hurt) {
+				return move.accuracy = true;
+			}
+			return move.accuracy;
+		},
 		category: "Physical",
 		shortDesc: "Deals 50% more damage and never misses if Rufflet is hit on the turn of the attack.",
 		id: "manifestdestiny",
@@ -2861,6 +2876,7 @@
 		pp: 10,
 		priority: 0,
 		flags: {
+			contact: 1,
 			protect: 1,
 			mirror: 1
 		},
@@ -2893,29 +2909,26 @@
 		zMovePower: 170,
 	},
 	"sporeburst": {
-		accuracy: 100,
-		basePower: 100,
-		category: "Special",
-		shortDesc: "Switches out turn 1, hits target turn 2, heals a team member for 50% damage dealt to the corresponding target.",
-		id: "sporeburst",
-		name: "Spore Burst",
-		pp: 5,
-		priority: 0,
-		flags: {
-			protect: 1,
-			mirror: 1
-		},
-		isFutureMove: true,
-		onTry: function(source, target) {
-			target.side.addSideCondition('futuremove');
-			source.switchFlag = true;
+        accuracy: 100,
+        basePower: 100,
+        category: "Special",
+        shortDesc: "Switches out turn 1, hits target turn 2, heals a team member for 50% damage dealt to the corresponding target.", // Make the healing work for the teammate
+        id: "sporeburst",
+        name: "Spore Burst",
+        pp: 5,
+        priority: 0,
+        flags: {protect: 1, mirror: 1},
+		  isFutureMove: true,
+		  onTry: function (source, target) {
+			 target.side.addSideCondition('futuremove');
+			 source.switchFlag = true;
 			if (target.side.sideConditions['futuremove'].positions[target.position]) {
 				return false;
 			}
 			target.side.sideConditions['futuremove'].positions[target.position] = {
 				duration: 2,
 				move: 'sporeburst',
-				source: ally,
+				source: source,
 				moveData: {
 					id: 'sporeburst',
 					name: "Spore Burst",
@@ -2923,10 +2936,11 @@
 					basePower: 100,
 					category: "Special",
 					priority: 0,
-					flags: {
-						heal: 1
-					},
-					drain: [1, 2],
+					flags: {},
+					/*onHit: function (target, side) {
+    				let teammate = side.active[this.effectData.sourcePosition];
+    				teammate.heal(Math.ceil(this.effectData.damage * 0.5));
+					},*/
 					effectType: 'Move',
 					isFutureMove: true,
 					type: 'Dark',
@@ -2935,11 +2949,11 @@
 			this.add('-start', source, 'move: Spore Burst');
 			return null;
 		},
-		secondary: false,
-		target: "normal",
-		type: "Dark",
-		zMovePower: 190,
-	},
+        secondary: false,
+        target: "normal",
+        type: "Dark",
+        zMovePower: 190, 
+    },
 	"divineluster": {
 		accuracy: 100,
 		basePower: 90,
@@ -3016,48 +3030,31 @@
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		shortDesc: "Summons Delta Stream on turn 1. Raises attack by 1 stage and defence + special defence by 2 stages on turn 2",
+		shortDesc: "Summons a Delta Stream current turn 1. Raises Attack by one stage and both Defense and Special Defense by two stages turn 2.",
 		id: "doldrum",
+		isViable: true,
 		name: "Doldrum",
 		pp: 5,
 		priority: 0,
-		flags: {
-			protect: 1,
-			mirror: 1
-		},
-		weather: 'deltastream',
-		isFutureMove: true,
-		onTry: function(source, target) {
-			this.setWeather('deltastream');
-			target.side.addSideCondition('futuremove');
-			if (target.side.sideConditions['futuremove'].positions[target.position]) {
-				return false;
+		flags: {charge: 1, nonsky: 1},
+		onTry: function (attacker, defender, move) {
+			if (attacker.removeVolatile(move.id)) {
+				return;
 			}
-			target.side.sideConditions['futuremove'].positions[target.position] = {
-				duration: 2,
-				move: 'doldrum',
-				source: source,
-				moveData: {
-					id: 'doldrum',
-					name: "Doldrum",
-					accuracy: 100,
-					basePower: 0,
-					category: "Status",
-					priority: 0,
-					flags: {},
-					ignoreImmunity: true,
-					boosts: {
-						atk: 1,
-						def: 2,
-						spd: 2,
-					},
-					effectType: 'Move',
-					isFutureMove: true,
-					type: 'Flying',
-				},
-			};
-			this.add('-start', source, 'move: Doldrum');
+			this.add('-prepare', attacker, move.name, defender);
+			if (!this.runEvent('ChargeMove', attacker, defender, move)) {
+				this.add('-anim', attacker, move.name, defender);
+				attacker.removeVolatile(move.id);
+				this.setWeather('deltastream');
+				return;
+			}
+			attacker.addVolatile('twoturnmove', defender);
 			return null;
+		},
+		boosts: {
+			atk: 2,
+			spd: 2,
+			def: 2,
 		},
 		secondary: false,
 		target: "self",
@@ -3164,6 +3161,7 @@
 		},
 		target: "self",
 		type: "Water",
+		zMoveEffect: 'clearnegativeboost',
 	},
 	"archaicanguish": {
 		accuracy: 90,
@@ -3180,7 +3178,6 @@
 		pp: 10,
 		priority: 0,
 		flags: {
-			contact: 1,
 			protect: 1,
 			mirror: 1,
 			heal: 1
@@ -3196,16 +3193,17 @@
 		zMovePower: 100,
 		contestType: "Tough",
 	},
-	"draconoidfangs": {
+	"draconidfangs": {
 		accuracy: 100,
 		basePower: 85,
 		category: "Physical",
 		shortDesc: "Nullifies Detect, Protect, and Quick/Wide Guard.",
-		id: "draconoidfangs",
-		name: "Draconoid Fangs",
+		id: "draconidfangs",
+		name: "Draconid Fangs",
 		pp: 10,
-		priority: 2,
+		priority: 0,
 		flags: {
+			contact: 1,
 			mirror: 1
 		},
 		onPrepareHit: function(target, source, move) {
@@ -3221,7 +3219,7 @@
 	},
 	"gearoverload": {
 		accuracy: 100,
-		basePower: 20,
+		basePower: 15,
 		category: "Physical",
 		shortDesc: "Hits 1 + X times, where X is the number of stat boosts the user has (à la Stored Power). If this move has hits 6 times or more, it replaces the user's ability with Steelworker before doing damage. If the move hits 11 times or more, it       replaces the user's ability with Huge Power before doing damage.",
 		id: "gearoverload",
@@ -3302,7 +3300,7 @@
 		shortDesc: "The user calls a rainbow on the user's side of the field, this rainbow doubles the effect of secondary effects taking place (It's the same effect if you mix Water and Fire Pledge). If this rainbow is in the field, this attack has a 30% of chance of dropping target's special defense one level.",
 		id: "rainbowburst",
 		name: "Rainbow Burst",
-		pp: 5,
+		pp: 15,
 		priority: 0,
 		flags: {
 			protect: 1,
@@ -3383,7 +3381,7 @@
 		secondary: false,
 		target: "normal",
 		type: "Fire",
-		zMoveEffect: 'heal',
+		zMovePower: 180,
 	},
 	"nuclearpollen": {
 		accuracy: true,
@@ -3466,6 +3464,7 @@
 		pp: 5,
 		priority: 0,
 		flags: {
+			contact: 1,
 			protect: 1,
 			mirror: 1,
 			heal: 1
@@ -3475,9 +3474,7 @@
 				return critRatio + 1;
 			},
 		},
-		onEffectiveness: function(typeMod, type) {
-			if (type === 'Ground') return 0;
-		},
+		ignoreImmunity: true,
 		onPrepareHit: function(target, source, move) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Wild Charge", target);
@@ -3500,6 +3497,7 @@
 		pp: 15,
 		priority: 0,
 		flags: {
+			contact: 1,
 			protect: 1,
 			mirror: 1
 		},
@@ -3628,7 +3626,7 @@
 	},
 	"acidgeyser": {
 		accuracy: 100,
-		basePower: 0,
+		basePower: 80,
 		category: "Special",
 		shortDesc: "Under sun, Acid's Well Base Power is increased by 1,5x and it's able to ignore steel type's inmunity to poison. 10% of chance to add a burn (50% in sun)",
 		id: "acidgeyser",
@@ -3720,7 +3718,7 @@
 		id: "moltenironspout",
 		isViable: true,
 		name: "Molten Iron Spout",
-		pp: 24,
+		pp: 15,
 		priority: 0,
 		flags: {
 			protect: 1,
@@ -3742,7 +3740,7 @@
 			this.add('-anim', source, "Flash Cannon", target);
 		},
 		type: "Steel",
-		zMovePower: 120,
+		zMovePower: 195,
 		contestType: "Cool",
 	},
 	"nosokinesis": {
@@ -3755,16 +3753,19 @@
         pp: 5,
         priority: 0,
         flags: {protect: 1, mirror: 1},
-		  onHit: function (target, source, move) {
-			  if (source.hasMove('thunderwave')) {
-					target.trySetStatus('par', source);
-		  }
-			  else if (source.hasMove('toxic')) {
-					target.trySetStatus('tox', source);
-		  }
-			  else if (source.hasMove('willowisp')) {
-				  target.trySetStatus('brn', source);
-		  }
+		  onBasePowerPriority: 4,
+			onBasePower: function (basePower, pokemon) {
+    		if (pokemon.hasMove('thunderwave') || pokemon.hasMove('willowisp') || pokemon.hasMove('toxic')) {
+        	return this.chainModify(1.5);
+    		}
+			},
+			onHit: function (target, pokemon) {
+    		if (pokemon.status && !target.status && target.trySetStatus(pokemon.status)) {
+        pokemon.cureStatus();
+        return this.heal(pokemon.maxhp / 4, pokemon, pokemon);
+    		} else {
+        return false;
+    		}
 		},
         secondary: false,
         target: "normal",
