@@ -16112,7 +16112,7 @@
 		},
 		abilities: {
 			0: "Speed Boost",
-			1: "Coumpound Eyes",
+			1: "Compound Eyes",
 			H: "Frisk"
 		},
 		weightkg: 38,
