@@ -16031,7 +16031,6 @@ abilities: {0: "Laser Beam"},
         color: "Green",
         eggGroups: ["Field", "Grass"],
     },
-// Cat Bed: 75004348
 	catbed: {
         num: 7500438,
         species: "Cat Bed",
