@@ -17686,7 +17686,6 @@ auroritarmega: {
 		},
 	},
 	
-};
 // FE End
 // Eternal Start
 		pansageeternal: {
