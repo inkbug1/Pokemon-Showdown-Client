@@ -1,4 +1,5 @@
-﻿// MFA Start
+exports.BattlePokedex = {
+// MFA Start
 	
 	fearowmega: {
       num: 22,
