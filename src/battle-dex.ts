@@ -652,7 +652,9 @@ const Dex = new class implements ModdedDex {
 			spriteData.h *= 1.5;
 			spriteData.y += -11;
 		}
-
+		
+		// CODE GOES HERE
+		
 		return spriteData;
 	}
 
@@ -710,6 +712,9 @@ const Dex = new class implements ModdedDex {
 		let top = Math.floor(num / 12) * 30;
 		let left = (num % 12) * 40;
 		let fainted = ((pokemon as Pokemon | ServerPokemon)?.fainted ? `;opacity:.3;filter:grayscale(100%) brightness(.5)` : ``);
+
+		// CODE GOES HERE
+
 		return `background:transparent url(${Dex.resourcePrefix}sprites/pokemonicons-sheet.png?v4) no-repeat scroll -${left}px -${top}px${fainted}`;
 	}
 
